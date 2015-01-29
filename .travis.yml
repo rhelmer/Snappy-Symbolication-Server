@@ -1,0 +1,13 @@
+language: python
+install:
+  - echo "Nothing to install"
+script:
+  - echo "No build or tests"
+deploy:
+  provider: heroku
+  api_key:
+    secure: m1hEu+6jqd9iKHYCTqTNMVOdV2m537XSBdH/cPsRk9Z9MmpJ1igImG0HTaXfdHlaKCkIc/aOLw0KO1IWDbdQmj8rHRpkvZBdn7wZL9OyxVsvsVK61nrS9Xi1qVhea7Zgn3bJ026ZnhMy6q8rOjVU0Sv9Nlts1bXjHn55ijebEcE=
+  app: murmuring-waters-3757
+  on:
+    repo: rhelmer/Snappy-Symbolication-Server
+    branch: bug1127532-snappy-auto-deploy

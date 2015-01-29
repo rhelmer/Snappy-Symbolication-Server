@@ -22,7 +22,7 @@ gOptions = {
   # IP address to listen on
   "hostname": "0.0.0.0",
   # TCP port to listen on
-  "portNumber": 80,
+  "portNumber": int(os.environ.get('PORT', 80)),
   # Trace-level logging (verbose)
   "enableTracing": 0,
   # Fallback server if symbol is not found locally
